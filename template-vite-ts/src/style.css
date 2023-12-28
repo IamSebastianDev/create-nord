@@ -1,0 +1,116 @@
+/** @format */
+
+:root {
+    --color-bg: rgba(33, 34, 39, 1);
+    --color-text: rgba(240, 239, 244, 0.9);
+    --color-accent-75: rgba(90, 176, 166, 0.75);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    line-height: 1.5;
+    font-family: Montserrat, 'Open Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    height: 100vh;
+}
+
+h1,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent-75);
+}
+
+button {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 170ms ease;
+    user-select: none;
+    opacity: 0.8;
+}
+
+button:hover {
+    color: var(--color-accent-75);
+    opacity: 1;
+    scale: 1.2;
+}
+
+.layout-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-row {
+    display: flex;
+    align-items: center;
+}
+
+.layout-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-medium {
+    gap: 1rem;
+}
+
+.layout-large {
+    gap: 2.5rem;
+}
+
+.code {
+    font-family: monospace;
+}
+
+.slim {
+    font-weight: 300;
+}
+
+.muted {
+    opacity: 0.75;
+}
+
+.logo img {
+    height: 30vh;
+    filter: drop-shadow(0 0 2.5rem var(--color-accent-75));
+}
+
+.vite-powered {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 1rem;
+    display: flex;
+    cursor: pointer;
+}
