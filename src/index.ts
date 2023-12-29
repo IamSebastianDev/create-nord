@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /** @format */
 
 import { bold, cyan, green, red, underline } from 'kolorist';
