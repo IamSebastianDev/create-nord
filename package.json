@@ -18,14 +18,13 @@
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/node": "^20.10.3",
+    "@types/prompts": "^2.4.9",
     "alex": "^11.0.0",
     "ava": "^6.0.1",
     "esbuild": "^0.19.4",
     "husky": "^8.0.2",
-    "kolorist": "^1.8.0",
     "prettier": "2.8.0",
     "pretty-quick": "^3.1.3",
-    "prompts": "^2.4.2",
     "rollup": "^4.9.1",
     "rollup-plugin-add-shebang": "^0.3.1",
     "rollup-plugin-cleanup": "^3.2.1",
@@ -62,7 +61,8 @@
   "description": "CLI tool to scaffold new Nørd applications",
   "author": "Sebastian Heinz <sebsatian@iamsebastian.dev>",
   "dependencies": {
-    "@types/prompts": "^2.4.9"
+    "kolorist": "^1.8.0",
+    "prompts": "^2.4.2"
   },
   "publishConfig": {
     "access": "public"
