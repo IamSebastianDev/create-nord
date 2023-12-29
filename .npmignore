@@ -2,7 +2,6 @@
 .github
 .husky
 .vscode
-src
 .alexrc
 .commitlintrc.json
 .prettierignore
