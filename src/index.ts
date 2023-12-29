@@ -4,7 +4,6 @@ import { bold, cyan, green, red, underline } from 'kolorist';
 import { selectTemplateVariants } from './lib/select-template-variant';
 import { Args } from './types/args';
 import { selectDirectory } from './lib/select-directory';
-import ora from 'ora';
 import { cp, readFile, readdir, rm, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import { join } from 'path';
@@ -12,7 +11,6 @@ import prompts from 'prompts';
 import { getNameFromPath } from './utils/get-name-from-path.util';
 import { isValidPackageName } from './utils/is-valid-package-name.util';
 import { constructPathFormFile } from './utils/construct-path-from-file.util';
-import { wait } from './utils/wait.util';
 import { diffPaths } from './utils/diff-paths.util';
 import { root } from './utils/root.util';
 import { isEmpty } from './utils';
@@ -83,20 +81,17 @@ const args: Args = Object.fromEntries([
     // If the target directory should be cleared and is still not empty
     // (better to check twice) remove all contents of that directory
     if (clear && !isEmpty(dir)) {
-        const spinner = ora({ spinner: 'simpleDots', text: bold(`Removing files in target directory...`) }).start();
         const files = await readdir(dir);
         for (const file of files) {
             if (existsSync(join(dir, file))) {
                 await rm(join(dir, file), { recursive: true, force: true });
             }
         }
-        spinner.stop();
     }
 
     // get the path to the correct template
     const templatePath = constructPathFormFile(import.meta.url, '../..', template.path);
     if (templatePath && existsSync(templatePath)) {
-        const spinner = ora({ spinner: 'simpleDots', text: bold(`Copying template...`) }).start();
         await cp(templatePath, dir, { recursive: true });
 
         // If it is a package based template, the package name should be replaced
@@ -105,9 +100,6 @@ const args: Args = Object.fromEntries([
             pkg.name = projectName;
             await writeFile(join(dir, 'package.json'), JSON.stringify(pkg, null, 2), { encoding: 'utf-8' });
         }
-
-        await wait();
-        spinner.stop();
     }
 
     // log the success message
