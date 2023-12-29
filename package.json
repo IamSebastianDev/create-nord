@@ -9,7 +9,7 @@
     "types": "./dist/types/index.d.ts"
   },
   "bin": {
-    "create-nord": "./dist/index.mjs"
+    "create-nord": "./dist/index.js"
   },
   "license": "MIT",
   "devDependencies": {
