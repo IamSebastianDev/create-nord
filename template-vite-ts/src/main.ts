@@ -13,8 +13,9 @@ const App = createComponent((html) => {
         ${Greeting({})}
         <h3 class="slim muted">edit <span class="code">'./src/main.ts'</span> and save to reload.</h3>
         <div class="layout-row layout-center layout-medium muted">
-            <a href="https://nordjs.dev">docs</a> / <a href="https://www.npmjs.com/package/@grainular/nord">npm</a> /
-            <a href="https://github.com/IamSebastianDev/nord">github</a>
+            <a target="blank" rel="noreferrer noopener" href="https://nordjs.dev">docs</a> /
+            <a target="blank" rel="noreferrer noopener" href="https://www.npmjs.com/package/@grainular/nord">npm</a> /
+            <a target="blank" rel="noreferrer noopener" href="https://github.com/IamSebastianDev/nord">github</a>
         </div>
         <a
             rel="noopener noreferrer"

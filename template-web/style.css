@@ -114,3 +114,8 @@ button:hover {
     display: flex;
     cursor: pointer;
 }
+
+.title {
+    width: clamp(16rem, 20vw, 32rem);
+    text-align: center;
+}

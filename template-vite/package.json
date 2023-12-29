@@ -12,6 +12,6 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
-    "@grainular/nord": "^1.5.0"
+    "@grainular/nord": "latest"
   }
 }

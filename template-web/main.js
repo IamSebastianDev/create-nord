@@ -28,7 +28,7 @@ const Greeting = createComponent((html) => {
 
     return html`<div class="layout-row layout-medium">
         <button ${on('click', () => shiftIdx(-1))}>&#171;</button>
-        <h1 title=${index}>${greeting}</h1>
+        <h1 class="title" title=${index}>${greeting}</h1>
         <button ${on('click', () => shiftIdx(1))}>&#187;</button>
     </div>`;
 });
@@ -40,8 +40,9 @@ const App = createComponent((html) => {
         ${Greeting({})}
         <h3 class="slim muted">edit <span class="code">'./main.js'</span> and save to reload.</h3>
         <div class="layout-row layout-center layout-medium muted">
-            <a href="https://nordjs.dev">docs</a> / <a href="https://www.npmjs.com/package/@grainular/nord">npm</a> /
-            <a href="https://github.com/IamSebastianDev/nord">github</a>
+            <a target="blank" rel="noreferrer noopener" href="https://nordjs.dev">docs</a> /
+            <a target="blank" rel="noreferrer noopener" href="https://www.npmjs.com/package/@grainular/nord">npm</a> /
+            <a target="blank" rel="noreferrer noopener" href="https://github.com/IamSebastianDev/nord">github</a>
         </div>`;
 });
 

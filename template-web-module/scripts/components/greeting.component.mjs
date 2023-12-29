@@ -14,7 +14,7 @@ export const Greeting = createComponent((html) => {
 
     return html`<div class="layout-row layout-medium">
         <button ${on('click', () => shiftIdx(-1))}>&#171;</button>
-        <h1 title=${index}>${greeting}</h1>
+        <h1 class="title" title=${index}>${greeting}</h1>
         <button ${on('click', () => shiftIdx(1))}>&#187;</button>
     </div>`;
 });
