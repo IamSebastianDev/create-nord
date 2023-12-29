@@ -56,9 +56,13 @@
   },
   "name": "@grainular/create-nord",
   "version": "1.0.0",
+  "description": "CLI tool to scaffold new Nørd applications",
   "author": "Sebastian Heinz <sebsatian@iamsebastian.dev>",
   "dependencies": {
     "@types/prompts": "^2.4.9",
     "ora": "^8.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
