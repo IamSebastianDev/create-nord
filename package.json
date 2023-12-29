@@ -8,7 +8,9 @@
     "import": "./dist/index.mjs",
     "types": "./dist/types/index.d.ts"
   },
-  "bin": "./dist/index.js",
+  "bin": {
+    "create-nord": "./dist/index.mjs"
+  },
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
