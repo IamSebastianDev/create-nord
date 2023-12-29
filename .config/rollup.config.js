@@ -18,8 +18,8 @@ export default [
         plugins: [commonjs(), resolve(), esbuild(), cleanup({ extensions: ['ts'] })],
         output: [
             {
-                file: pkg.module,
-                format: 'es',
+                file: pkg.main,
+                format: 'cjs',
                 sourcemap: true,
             },
         ],
