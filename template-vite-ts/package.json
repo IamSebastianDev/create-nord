@@ -13,6 +13,6 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
-    "@grainular/nord": "^1.4.0"
+    "@grainular/nord": "latest"
   }
 }
