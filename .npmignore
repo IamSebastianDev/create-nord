@@ -7,6 +7,6 @@ src
 .commitlintrc.json
 .prettierignore
 .prettierrc
-commitlint.config.json
+commitlint.config.js
 tsconfig.json
 tests
