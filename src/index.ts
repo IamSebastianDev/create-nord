@@ -4,7 +4,7 @@ import { bold, cyan, green, red, underline } from 'kolorist';
 import { selectTemplateVariants } from './lib/select-template-variant';
 import { Args } from './types/args';
 import { selectDirectory } from './lib/select-directory';
-import { cp, readFile, readdir, rm, writeFile } from 'fs/promises';
+import { cp, readFile, readdir, rename, rm, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import { join } from 'path';
 import prompts from 'prompts';
@@ -99,6 +99,9 @@ const args: Args = Object.fromEntries([
             const pkg = JSON.parse(await readFile(join(dir, `package.json`), { encoding: 'utf-8' }));
             pkg.name = projectName;
             await writeFile(join(dir, 'package.json'), JSON.stringify(pkg, null, 2), { encoding: 'utf-8' });
+
+            // Rename the _gitignore file
+            await rename(join(dir, '_gitignore'), join(dir, '.gitignore'));
         }
     }
 
