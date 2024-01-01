@@ -7,5 +7,5 @@
 .prettierignore
 .prettierrc
 commitlint.config.js
-tsconfig.json
 tests
+!.gitignore
