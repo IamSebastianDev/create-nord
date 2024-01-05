@@ -35,6 +35,7 @@ const Greeting = createComponent((html) => {
 
 const App = createComponent((html) => {
     return html`<div class="logo">
+            <div class="aurora"></div>
             <img alt="The Nørd logo." src="./nord-logo.png" />
         </div>
         ${Greeting({})}
