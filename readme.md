@@ -18,8 +18,8 @@ Using `.` for the project directory will create the project in the current direc
 
 ## Contributing
 
-We welcome contributions to the Nørd App CLI Tool! If you're interested in contributing, please check out our [contribution guidelines](./contributing.md).
+We welcome contributions to `@grainular/create-nord`! If you're interested in contributing, please check out our [contribution guidelines](./contributing.md).
 
 ## License
 
-Nørd App CLI Tool is made available under the MIT License. For more details, see the [license](./license.md) file.
+`@grainular/create-nord` is made available under the MIT License. For more details, see the [license](./license.md) file.

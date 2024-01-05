@@ -5,6 +5,7 @@ import { Greeting } from './components/greeting.component.mjs';
 
 const App = createComponent((html) => {
     return html`<div class="logo">
+            <div class="aurora"></div>
             <img alt="The Nørd logo." src="./assets/nord-logo.png" />
         </div>
         ${Greeting({})}
