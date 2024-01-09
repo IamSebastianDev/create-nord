@@ -138,27 +138,27 @@ button:hover {
 
 @keyframes aurora {
     0% {
-        filter: blur(50px) saturate(2) hue-rotate(0);
+        filter: blur(50px) saturate(5) hue-rotate(0);
         scale: 1.2;
         rotate: 0deg;
     }
     25% {
-        filter: blur(50px) saturate(2) hue-rotate(90deg);
+        filter: blur(50px) saturate(7) hue-rotate(90deg);
         scale: 1.25;
         rotate: 90deg;
     }
     50% {
-        filter: blur(50px) saturate(2) hue-rotate(180deg);
+        filter: blur(50px) saturate(6) hue-rotate(180deg);
         scale: 1.2;
         rotate: 180deg;
     }
     75% {
-        filter: blur(50px) saturate(2) hue-rotate(270deg);
+        filter: blur(50px) saturate(4) hue-rotate(270deg);
         scale: 1.15;
         rotate: 270deg;
     }
     100% {
-        filter: blur(50px) saturate(2) hue-rotate(360deg);
+        filter: blur(50px) saturate(5) hue-rotate(360deg);
         scale: 1.2;
         rotate: 360deg;
     }
